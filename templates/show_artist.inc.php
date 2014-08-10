@@ -123,13 +123,13 @@ $biography = Recommendation::get_artist_info($artist->id);
             <a class="media-poster-container" href="#">
                 <div class="artist-poster media-poster" style="background-image: url(<?php echo $biography['largephoto']; ?>);">
                     <div class="media-poster-overlay"></div>
-                    <div class="media-poster-actions ">
+                    <div class="media-poster-actions">
                         <button class="play-btn media-poster-btn btn-link" tabindex="-1">
-                            <i class="glyphicon play">
+                            <i class="fa fa-play fa-lg">
                                 <a rel="nohtml" href="<?php echo AmpConfig::get('ajax_url') . '?page=stream&action=directplay&object_type=artist&object_id=' . $artist->id; ?>"></a>
                             </i></button>
                         <button class="edit-btn media-poster-btn btn-link" tabindex="-1">
-                            <i class="glyphicon pencil">
+                            <i class="fa fa-pencil fa-lg">
                                 <?php if (Access::check('interface','50')) { ?>
                                 <a rel="nohtml" id="<?php echo 'edit_artist_'.$artist->id ?>" onclick="showEditDialog('artist_row', '<?php echo $artist->id ?>', '<?php echo 'edit_artist_'.$artist->id ?>', '<?php echo T_('Artist edit') ?>', '')">
                                 </a>
@@ -139,13 +139,13 @@ $biography = Recommendation::get_artist_info($artist->id);
                             </i>
                         </button>
                         <button class="more-btn media-poster-btn btn-link" tabindex="-1">
-                            <i class="glyphicon more">
+                            <i class="fa fa-ellipsis-h fa-lg">
                             </i>
                         </button>
                     </div>
                     <?php 
                         if (AmpConfig::get('show_played_times')) {
-                            echo '<span class="played-count-badge badge badge-lg">'.$artist->object_cnt.'</span>';
+                            echo '<span class="unwatched-count-badge badge badge-lg">'.$artist->object_cnt.'</span>';
                         }
                     ?>
                 </div>
