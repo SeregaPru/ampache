@@ -38,9 +38,7 @@ $biography = Recommendation::get_artist_info($artist->id);
                 </div>
             </div>
             <p class="metadata-labels">
-                <span class="rating-container rating-container-inline">
-                    <?php show_rating($artist->id, 'artist'); ?>
-                </span>
+                <?php show_rating($artist->id, 'artist'); ?>
             </p>
             <div class="summary-container">
                 <div class="summary">

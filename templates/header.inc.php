@@ -76,6 +76,7 @@ $_SESSION['login'] = false;
         <script src="<?php echo $web_path; ?>/lib/javascript/base.js" language="javascript" type="text/javascript"></script>
         <script src="<?php echo $web_path; ?>/lib/javascript/ajax.js" language="javascript" type="text/javascript"></script>
         <script src="<?php echo $web_path; ?>/lib/javascript/tools.js" language="javascript" type="text/javascript"></script>
+        <script src="<?php echo $web_path; ?>/lib/javascript/user-interface.js" language="javascript" type="text/javascript"></script>
         <?php
         if (AmpConfig::get('ajax_load')) {
             $iframed = true;
