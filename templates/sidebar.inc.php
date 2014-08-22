@@ -28,7 +28,7 @@ $web_path = AmpConfig::get('web_path');
         <li class="dashboard-server-list-item">
             <div class="side-bar-actions pull-right">
                 <span id="music-dropdown" class="dropdown">
-                <a rel="nohtml" class="btn-gray dropdown-toggle" href="#music-dropdown" data-toggle="dropdown">
+                <a rel="nohtml" class="btn-gray dropdown-toggle" data-toggle="dropdown">
                     <i class="fa fa-ellipsis-h"></i>
                 </a>
                 <ul class="dropdown-menu pull-right">
@@ -69,7 +69,7 @@ $web_path = AmpConfig::get('web_path');
         <li class="dashboard-server-list-item">
             <div class="side-bar-actions pull-right">
                 <span id="movie-dropdown" class="dropdown">
-                <a rel="nohtml" class="btn-gray dropdown-toggle" href="#movie-dropdown" data-toggle="dropdown">
+                <a rel="nohtml" class="btn-gray dropdown-toggle" data-toggle="dropdown">
                     <i class="fa fa-ellipsis-h"></i>
                 </a>
                 <ul class="dropdown-menu pull-right">
@@ -109,7 +109,5 @@ $web_path = AmpConfig::get('web_path');
         <?php
         // TODO: Add other menu and add collapse feature
         ?>
-        
-        
     </ul>
 </div>
